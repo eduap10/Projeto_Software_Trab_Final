@@ -1,61 +1,79 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🎮 Sistema de Tarefas Gamificado — Projeto de Software
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Repositório contendo meu **Projeto Final da disciplina de Projeto de Software**.  
+Módulo funcional desenvolvido em **Laravel 12 + PHP 8.2 + PostgreSQL + Bootstrap**.
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 🚀 Objetivo
+Demonstrar a aplicação prática de fundamentos de engenharia de software:
+- **Interface intuitiva (UI/UX)** com protótipo e implementação
+- **Modelagem UML e ER**
+- Aplicação de **princípios SOLID**
+- Implementação de **padrões de projeto (Factory, Observer, Singleton)**
+- Login e **CRUD de tarefas** persistidos em PostgreSQL
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🖼️ Protótipo
+O protótipo serviu de guia para a interface, com **login, dashboard com progresso e CRUD de tarefas**.  
+https://www.figma.com/proto/d66aYwAsxwUVJz3cLbCFut/Smart-Home-App--Community-?node-id=4-117&p=f&t=07DijlzNb3g33IEV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=134%3A8&show-proto-sidebar=1
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 📊 Modelagem
+- **Diagrama de Classes:** `assents/Diagram de Classes.png`  
+- **Diagrama ER:** `assents/ER.png`
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🔐 Funcionalidades
+- Autenticação (login/registro/logout)
+- Dashboard com **nível** e **experiência (XP)**
+- CRUD de Tarefas:
+  - Criar
+  - Listar
+  - Editar
+  - Excluir
+- Barra de progresso e contadores por status (`pending`, `in_progress`, `completed`)
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## 🧩 Arquitetura & Padrões
 
-### Premium Partners
+### 🔹 Princípios SOLID
+- **SRP** — Services isolam a regra de negócio (`TaskService`, `GameService`)  
+- **DIP** — `TaskService` depende de `TaskFactoryInterface` (não da classe concreta)  
+- **ISP/OCP** — `TaskFactoryInterface` permite extender sem modificar consumidores  
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 🔹 Design Patterns
+- **Factory** — `app/Factories/TaskFactory.php` cria `Task` com lógica de pontos  
+- **Observer** — `app/Observers/TaskObserver.php` soma XP e checa conquistas ao concluir tarefas  
+- **Singleton** — `GameService` registrado como singleton em `AppServiceProvider`  
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## ⚙️ Como rodar localmente
 
-## Code of Conduct
+**Pré-requisitos:** PHP 8.2+, Composer, PostgreSQL
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+```bash
+# Clonar o repositório
+git clone https://github.com/eduap10/Projeto_Software_Trab_Final.git
+cd Projeto_Software_Trab_Final
 
-## Security Vulnerabilities
+# Instalar dependências
+composer install
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+# Copiar .env e configurar banco (PostgreSQL)
+cp .env.example .env
+# edite DB_DATABASE, DB_USERNAME, DB_PASSWORD
 
-## License
+# Gerar key
+php artisan key:generate
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Migrar tabelas
+php artisan migrate
+
+# Subir servidor
+php artisan serve
