@@ -112,6 +112,12 @@ Assista à apresentação completa do sistema**.
 
 ---
 
+##👤 Autor
+**Eduardo (eduap10)
+**Projeto Final — Disciplina de Projeto de Software (2025)
+
+---
+
 ### ▶️ Passos de instalação
 ```bash
 # Clonar o repositório
@@ -133,9 +139,3 @@ php artisan migrate
 
 # Subir servidor local
 php artisan serve
-
----
-
-##👤 Autor
-**Eduardo (eduap10)
-**Projeto Final — Disciplina de Projeto de Software (2025)
