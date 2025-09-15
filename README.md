@@ -112,7 +112,7 @@ Assista à apresentação completa do sistema**.
 
 ---
 
-##👤 Autor
+## 👤 Autor
 Eduardo André Pedro (194746 - UPF)
  - Projeto Final — Disciplina de Projeto de Software (2025)
 
