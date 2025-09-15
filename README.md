@@ -61,12 +61,54 @@ Modelagem da base de dados PostgreSQL, estruturando tabelas e relacionamentos.
 
 ---
 
+## 🎥 Vídeo de Apresentação
+Assista à apresentação completa do sistema**.  
+👉 [📺 YouTube - Projeto Final](https://youtu.be/m90zL2kGAJI)
+
+--
+
+## 📂 Estrutura do Projeto
+  - app/Contracts → Interfaces (ex.: TaskFactoryInterface)
+
+  - app/Factories → Implementações de Factory Pattern
+
+  - app/Observers → Observadores de eventos (Observer Pattern)
+
+  - app/Services → Regras de negócio (TaskService, GameService)
+
+  - database/migrations → Estrutura do banco (PostgreSQL)
+
+  - resources/views → Templates Blade (UI em Bootstrap)
+
+--
+
 ## ⚙️ Como Rodar o Projeto
 
 ### 🔧 Pré-requisitos
 - PHP 8.2+
 - Composer
 - PostgreSQL
+
+## ✅ Checklist de Entrega
+**📌 O que o professor/banca vai avaliar:
+
+- Protótipo de interface → link Figma incluso
+
+- Modelagem UML e ER → arquivos em assents/
+
+- Aplicação de pelo menos 3 princípios SOLID
+
+- Implementação de 2 padrões de projeto (Factory, Observer, Singleton)
+
+- Arquitetura organizada em MVC com Laravel
+
+- Funcionalidade mínima: login + CRUD de tarefas
+
+- Vídeo de apresentação (≤ 5 minutos) → link incluso no README
+
+- Código publicado no GitHub público
+
+--
 
 ### ▶️ Passos de instalação
 ```bash
@@ -89,3 +131,7 @@ php artisan migrate
 
 # Subir servidor local
 php artisan serve
+
+##👤 Autor
+**Eduardo (eduap10)
+**Projeto Final — Disciplina de Projeto de Software (2025)
