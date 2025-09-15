@@ -13,7 +13,7 @@ O foco foi demonstrar a aplicação prática de **UI/UX, UML/ER, princípios SOL
 
 ## 🖼️ Protótipo
 O protótipo inicial guiou a implementação da interface, contendo tela de **login**, **dashboard com progresso** e **CRUD de tarefas**.  
-👉 [Acesse o protótipo no Figma](https://www.figma.com/proto/d66aYwAsxwUVJz3cLbCFut/Smart-Home-App--Community-?node-id=4-117&p=f&t=07DijlzNb3g33IEV-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=134%3A8&show-proto-sidebar=1)
+👉 [Acesse o protótipo no Figma](https://www.figma.com/proto/d66aYwAsxwUVJz3cLbCFut/Smart-Home-App--Community-?node-id=134-8&p=f&t=5ru7EXsgqixZ405l-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=134%3A8&show-proto-sidebar=1)
 
 ---
 
