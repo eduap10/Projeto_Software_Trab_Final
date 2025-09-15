@@ -65,7 +65,7 @@ Modelagem da base de dados PostgreSQL, estruturando tabelas e relacionamentos.
 Assista à apresentação completa do sistema**.  
 👉 [📺 YouTube - Projeto Final](https://youtu.be/m90zL2kGAJI)
 
---
+---
 
 ## 📂 Estrutura do Projeto
   - app/Contracts → Interfaces (ex.: TaskFactoryInterface)
@@ -80,7 +80,7 @@ Assista à apresentação completa do sistema**.
 
   - resources/views → Templates Blade (UI em Bootstrap)
 
---
+---
 
 ## ⚙️ Como Rodar o Projeto
 
@@ -88,6 +88,8 @@ Assista à apresentação completa do sistema**.
 - PHP 8.2+
 - Composer
 - PostgreSQL
+
+---
 
 ## ✅ Checklist de Entrega
 **📌 O que o professor/banca vai avaliar:
@@ -108,7 +110,7 @@ Assista à apresentação completa do sistema**.
 
 - Código publicado no GitHub público
 
---
+---
 
 ### ▶️ Passos de instalação
 ```bash
@@ -131,6 +133,8 @@ php artisan migrate
 
 # Subir servidor local
 php artisan serve
+
+---
 
 ##👤 Autor
 **Eduardo (eduap10)
