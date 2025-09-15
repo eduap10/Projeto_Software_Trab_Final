@@ -92,7 +92,7 @@ Assista à apresentação completa do sistema**.
 ---
 
 ## ✅ Checklist de Entrega
-**📌 O que o professor/banca vai avaliar:
+📌 O que o professor/banca vai avaliar:
 
 - Protótipo de interface → link Figma incluso
 
@@ -113,8 +113,8 @@ Assista à apresentação completa do sistema**.
 ---
 
 ##👤 Autor
-**Eduardo (eduap10)
-**Projeto Final — Disciplina de Projeto de Software (2025)
+Eduardo André Pedro (194746 - UPF)
+ - Projeto Final — Disciplina de Projeto de Software (2025)
 
 ---
 
